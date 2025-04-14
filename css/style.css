@@ -1,0 +1,619 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    width: 99%;
+    height: 97%;
+    background-image: url('../img/carne.jpeg');
+    background-size: cover;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    padding: 0px 40px;
+}
+
+.logo {
+    font-size: 30px;
+    color: orange;
+    
+}
+
+.nav {
+    position: relative;
+    left: -180px;
+}
+
+a {
+    padding: 5px 15px;
+    color: orange;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.search {
+    font-size: 25px;
+    color: orange;
+    display: flex;
+}
+
+.search i {
+    padding: 5px 20px;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 65px;
+    align-items: center;
+}
+
+.right {
+    width: 440px;
+    height: 440px;
+    background-image: url('../img/wooden.jpg');
+    background-size: cover;
+    border-radius: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right::before {
+    width: 430px;
+    height: 430px;
+    border: 2px solid white;
+    content: '';
+    position: absolute;
+    border-radius: 430px;
+    padding: 10px;
+}
+
+.left p:nth-child(1) {
+    color: white;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+
+.left h1 {
+    font-size: 90px;
+    color: white;
+}
+
+.left p:nth-child(3) {
+    color: orange;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.left button {
+    display: flex;
+    width: 200;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 20px;
+    border: 2px solid rgba(5, 5, 5, 0);
+    background-color: transparent;
+    color: white;
+    margin: 20px 0px;
+}
+
+.SocialMedia {
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 40px;
+    height: 200px;
+    background-color: rgb(246, 241, 241);
+    font-size: 25px;
+}
+
+.SocialMedia i:hover {
+    color: orange;
+}
+
+.menu {
+    display: flex;
+    margin: 0px 100px;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    z-index: 1000;
+}
+
+.whatsapp img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgb(14, 14, 14);
+    transition: transform 0.3s;
+}
+
+.whatsapp img:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+    .top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .nav {
+        position: static;
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .heading {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left {
+        text-align: center;
+    }
+
+    .right {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .left h1 {
+        font-size: 50px;
+    }
+
+    .left p:nth-child(1) {
+        font-size: 20px;
+    }
+
+    .left p:nth-child(3) {
+        font-size: 20px;
+    }
+
+    .left button {
+        width: 150px;
+        height: 40px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .SocialMedia {
+        width: 30px;
+        height: 150px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .SocialMedia i {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .whatsapp img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .top {
+        padding: 0px 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav a {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .search {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .search i {
+        padding: 5px 10px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .logo {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .nav a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .top {
+        padding: 0px 30px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .heading {
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .left h1 {
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .left p:nth-child(1) {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .left p:nth-child(3) {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .left button {
+        width: 180px;
+        height: 35px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .SocialMedia {
+        width: 35px;
+        height: 180px;
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .SocialMedia i {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .whatsapp img {
+        width: 55px;
+        height: 55px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .top {
+        padding: 0px 25px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .nav a {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .menu {
+        margin: 0px 50px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .menu {
+        flex-direction: column;
+        margin: 0px 10px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .heading {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .left {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .right {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .left h1 {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .left p:nth-child(1) {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .left p:nth-child(3) {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .left button {
+        width: 160px;
+        height: 30px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .SocialMedia {
+        width: 30px;
+        height: 150px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .SocialMedia i {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .whatsapp img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .top {
+        padding: 0px 20px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .nav a {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .search {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .search i {
+        padding: 5px 10px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .logo {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .nav a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .top {
+        padding: 0px 25px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .menu {
+        margin: 0px 30px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .menu {
+        flex-direction: column;
+        margin: 0px 10px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .heading {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .left {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .right {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .left h1 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .left p:nth-child(1) {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .left p:nth-child(3) {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .left button {
+        width: 140px;
+        height: 25px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .SocialMedia {
+        width: 25px;
+        height: 120px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .SocialMedia i {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .whatsapp img {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .top {
+        padding: 0px 15px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .nav a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .search {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .search i {
+        padding: 5px 8px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .logo {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .nav a {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .top {
+        padding: 0px 20px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .menu {
+        margin: 0px 20px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .menu {
+        flex-direction: column;
+        margin: 0px 10px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .heading {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .left {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .right {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .left h1 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .left p:nth-child(1) {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,276 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     font-family: sans-serif;
+     background: #f9f9f9;
+     color: #333;
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     min-height: 100vh;
+
+ }
+
+ header {
+     top: 0;
+     width: 100%;
+     position: fixed;
+     color: white;
+     background-color: #0ede0e;
+     padding: 1.0rem 1rem;
+
+ }
+
+ header h1 {
+     font-size: 2.5rem;
+     margin-bottom: 0.5rem;
+ }
+
+ .navbar {
+     display: flex;
+     color: white;
+     align-items: center;
+     justify-content: space-between;
+
+
+ }
+
+ .logo {
+     display: flex;
+     font-size: 1.5rem;
+     font-weight: bold;
+     color: orange;
+ }
+
+ .nav-links {
+     display: flex;
+     list-style: none;
+     height: 100%;
+     align-items: center;
+     padding: 20px;
+
+ }
+
+ .nav-links a {
+
+     color: white;
+     text-decoration: none;
+     font-size: 20px;
+     border-radius: 20px;
+
+ }
+
+ .logo {
+     display: flex;
+     font-size: 2rem;
+     font-weight: bold;
+     color: orange;
+     /* text-decoration: none; */
+ }
+
+ .menu-section {
+     max-width: 1100px;
+     margin: 2rem auto;
+     padding: 1rem;
+     text-align: center;
+
+ }
+
+ .menu-section h2 {
+     font-size: 2rem;
+     margin-bottom: 0.5rem;
+     margin: 100px auto;
+     margin-bottom: 20px;
+ }
+
+ .subtitle {
+     font-style: italic;
+     color: #555;
+     margin-bottom: 1.5rem;
+ }
+
+ .filters {
+     display: flex;
+     justify-content: center;
+     gap: 1rem;
+     flex-wrap: wrap;
+     margin-bottom: 2rem;
+ }
+
+ .filters button {
+     background: transparent;
+     border: 2px solid #0ede0e;
+     color: #070707;
+     padding: 0.5rem 1rem;
+     border-radius: 20px;
+     cursor: pointer;
+     transition: 0.3s;
+     font-weight: bold;
+ }
+
+ .filters .active,
+ .filters button:hover {
+     background: #0aec1d;
+     color: white;
+ }
+
+ a {
+     color: rgb(255, 255, 255);
+     text-decoration: none;
+     padding: 0.5rem 1rem;
+     border-radius: 20px;
+     transition: background 0.3s;
+ }
+
+ .container {
+     max-width: 800px;
+     margin: 100px auto;
+     background: #fff;
+     padding: 40px;
+     border-radius: 15px;
+     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+     text-decoration: none;
+ }
+
+ h1 {
+     text-align: center;
+     color: #010101;
+
+ }
+
+ .contato-info {
+     display: block;
+     align-items: center;
+     justify-content: center;
+     flex-direction: row;
+     text-decoration: none;
+
+ }
+
+ .contato-info h2 {
+     align-items: center;
+     justify-content: center;
+     display: flex;
+     font-size: 28px;
+     margin-bottom: 50px;
+ }
+
+ .funcionamento {
+     justify-content: center;
+     text-align: justify;
+     align-items: center;
+
+ }
+
+ span {
+    display: flex;
+    margin: 5px;
+ }
+
+ .contato-info .info {
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     margin-top: 20px;
+ }
+
+ .contato-info .info div {
+     flex: 1 1 30%;
+     margin-bottom: 20px;
+ }
+
+ .contato-info h3 {
+     margin-bottom: 8px;
+     color: #4CAF50;
+ }
+
+ /* Formulário */
+ .formulario {
+     margin-top: 40px;
+     background-color: #fff;
+     padding: 30px;
+     border-radius: 10px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+ }
+
+ .formulario h2 {
+     margin-bottom: 20px;
+ }
+
+ input, textarea {
+     width: 100%;
+     padding: 15px;
+     margin-bottom: 20px;
+     border: 1px solid #ccc;
+     border-radius: 8px;
+     font-size: 16px;
+ }
+
+ .campo-duplo {
+     display: flex;
+     gap: 20px;
+ }
+
+ .campo-duplo input {
+     flex: 1;
+ }
+
+ button {
+     background-color: #4CAF50;
+     color: white;
+     border: none;
+     padding: 14px 30px;
+     border-radius: 8px;
+     cursor: pointer;
+     font-size: 16px;
+     transition: background 0.3s ease;
+ }
+
+ button:hover {
+     background-color: #45a049;
+ }
+
+ .whatsapp {
+     position: fixed;
+     bottom: 16px;
+     right: 16px;
+     z-index: 1000;
+ }
+
+ .whatsapp img {
+     width: 60px;
+     height: 60px;
+     border-radius: 50%;
+     box-shadow: 0 4px 8px rgb(14, 14, 14);
+     transition: transform 0.3s;
+ }
+
+ .whatsapp img:hover {
+     transform: scale(1.1);
+ }
+
+ iframe {
+     width: 100%;
+     height: 300px;
+     border: none;
+ }
+
+ footer {
+     text-align: center;
+     padding: 2rem 1rem;
+     background-color: #fff;
+     font-size: 0.9rem;
+     color: #aaa;
+     margin-top: 3rem;
+ }
+
+ @media screen and (max-width: 730px) {
+     .nav-bar {
+         padding: 1.5rem 4rem;
+     }
+
+ }
