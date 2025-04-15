@@ -190,7 +190,6 @@
      color: #4CAF50;
  }
 
- /* Formulário */
  .formulario {
      margin-top: 40px;
      background-color: #fff;
@@ -270,17 +269,14 @@
      margin-top: 3rem;
  }
 
- @media screen and (max-width: 730px) {
+ @media screen and (max-width: 1020px) {
      .nav-bar {
-         padding: 1.5rem 4rem;
+         align-items: center;
+         justify-content: center;
+     }
+
+     .nav-bar {
+         flex-direction: column;
      }
 
  }
-
-@media (max-width: 1023px) {
-    .container {
-        width: 50%;
-
-    }
-
-}
