@@ -188,7 +188,6 @@
      color: #4CAF50;
  }
 
- /* Formulário */
  .formulario {
      margin-top: 40px;
      background-color: #fff;
@@ -274,3 +273,11 @@
      }
 
  }
+
+@media (max-width: 1023px) {
+    .container .esquerda .opcoes {
+        width: 50%;
+
+    }
+
+}
