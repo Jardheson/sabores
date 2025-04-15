@@ -5,6 +5,7 @@
  }
 
  body {
+     display: flex;
      font-family: sans-serif;
      background: #f9f9f9;
      color: #333;
@@ -18,6 +19,7 @@
  header {
      top: 0;
      width: 100%;
+     display: flex;
      position: fixed;
      color: white;
      background-color: #0ede0e;
